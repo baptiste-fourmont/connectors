@@ -1017,291 +1017,291 @@ jobs:
       - run:
           working_directory: ~/opencti/internal-import-file/import-file-stix
           name: Build Docker image opencti/connector-import-file-stix
-          command: docker build -t opencti/connector-import-file-stix:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-import-file-stix:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-import-file/import-document
           name: Build Docker image opencti/connector-import-document
-          command: docker build -t opencti/connector-import-document:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-import-document:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-export-file/export-file-stix
           name: Build Docker image opencti/connector-export-file-stix
-          command: docker build -t opencti/connector-export-file-stix:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-export-file-stix:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-export-file/export-file-txt
           name: Build Docker image opencti/connector-export-file-txt
-          command: docker build -t opencti/connector-export-file-txt:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-export-file-txt:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/hygiene
           name: Build Docker image opencti/connector-hygiene
-          command: docker build -t opencti/connector-hygiene:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-hygiene:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/alienvault
           name: Build Docker image opencti/connector-alienvault
-          command: docker build -t opencti/connector-alienvault:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-alienvault:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/diode-import
           name: Build Docker image opencti/connector-diode-import
-          command: docker build -t opencti/connector-diode-import:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-diode-import:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/crowdstrike
           name: Build Docker image opencti/connector-crowdstrike
-          command: docker build -t opencti/connector-crowdstrike:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-crowdstrike:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cuckoo
           name: Build Docker image opencti/connector-cuckoo
-          command: docker build -t opencti/connector-cuckoo:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cuckoo:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-export-file/export-file-csv
           name: Build Docker image opencti/connector-export-file-csv
-          command: docker build -t opencti/connector-export-file-csv:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-export-file-csv:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cape
           name: Build Docker image opencti/connector-cape
-          command: docker build -t opencti/connector-cape:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cape:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/misp
           name: Build Docker image opencti/connector-misp
-          command: docker build -t opencti/connector-misp:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-misp:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/mitre
           name: Build Docker image opencti/connector-mitre
-          command: docker build -t opencti/connector-mitre:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-mitre:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/opencti
           name: Build Docker image opencti/connector-opencti
-          command: docker build -t opencti/connector-opencti:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-opencti:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cve
           name: Build Docker image opencti/connector-cve
-          command: docker build -t opencti/connector-cve:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cve:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/ipinfo
           name: Build Docker image opencti/connector-ipinfo
-          command: docker build -t opencti/connector-ipinfo:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-ipinfo:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/virustotal
           name: Build Docker image opencti/connector-virustotal
-          command: docker build -t opencti/connector-virustotal:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-virustotal:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/virustotal-downloader
           name: Build Docker image opencti/connector-virustotal-downloader
-          command: docker build -t opencti/connector-virustotal-downloader:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-virustotal-downloader:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/lastinfosec
           name: Build Docker image opencti/connector-lastinfosec
-          command: docker build -t opencti/connector-lastinfosec:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-lastinfosec:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/malpedia
           name: Build Docker image opencti/connector-malpedia
-          command: docker build -t opencti/connector-malpedia:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-malpedia:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/mwdb
           name: Build Docker image opencti/connector-mwdb
-          command: docker build -t opencti/connector-mwdb:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-mwdb:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/riskiq
           name: Build Docker image opencti/connector-riskiq
-          command: docker build -t opencti/connector-riskiq:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-riskiq:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/valhalla
           name: Build Docker image opencti/connector-valhalla
-          command: docker build -t opencti/connector-valhalla:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-valhalla:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/tanium
           name: Build Docker image opencti/connector-tanium
-          command: docker build -t opencti/connector-tanium:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-tanium:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/mandiant
           name: Build Docker image opencti/connector-mandiant
-          command: docker build -t opencti/connector-mandiant:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-mandiant:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/kaspersky
           name: Build Docker image opencti/connector-kaspersky
-          command: docker build -t opencti/connector-kaspersky:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-kaspersky:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/greynoise
           name: Build Docker image opencti/connector-greynoise
-          command: docker build -t opencti/connector-greynoise:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-greynoise:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/taxii2
           name: Build Docker image opencti/connector-taxii2
-          command: docker build -t opencti/connector-taxii2:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-taxii2:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/thehive
           name: Build Docker image opencti/connector-thehive
-          command: docker build -t opencti/connector-thehive:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-thehive:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/abuseipdb
           name: Build Docker image opencti/connector-abuseipdb
-          command: docker build -t opencti/connector-abuseipdb:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-abuseipdb:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/urlhaus
           name: Build Docker image opencti/connector-urlhaus
-          command: docker build -t opencti/connector-urlhaus:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-urlhaus:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/malbeacon
           name: Build Docker image opencti/connector-malbeacon
-          command: docker build -t opencti/connector-malbeacon:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-malbeacon:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/crowdsec
           name: Build Docker image opencti/connector-crowdsec
-          command: docker build -t opencti/connector-crowdsec:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-crowdsec:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/sophoslabs-intelix
           name: Build Docker image opencti/connector-sophoslabs-intelix
-          command: docker build -t opencti/connector-sophoslabs-intelix:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-sophoslabs-intelix:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/flashpoint
           name: Build Docker image opencti/connector-flashpoint
-          command: docker build -t opencti/connector-flashpoint:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-flashpoint:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/tagger
           name: Build Docker image opencti/connector-tagger
-          command: docker build -t opencti/connector-tagger:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-tagger:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/eset
           name: Build Docker image opencti/connector-eset
-          command: docker build -t opencti/connector-eset:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-eset:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/silobreaker
           name: Build Docker image opencti/connector-silobreaker
-          command: docker build -t opencti/connector-silobreaker:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-silobreaker:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/sentinel
           name: Build Docker image opencti/connector-sentinel
-          command: docker build -t opencti/connector-sentinel:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-sentinel:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cybersixgill
           name: Build Docker image opencti/connector-cybersixgill
-          command: docker build -t opencti/connector-cybersixgill:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cybersixgill:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/tweetfeed
           name: Build Docker image opencti/connector-tweetfeed
-          command: docker build -t opencti/connector-tweetfeed:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-tweetfeed:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/threatfox
           name: Build Docker image opencti/connector-threatfox
-          command: docker build -t opencti/connector-threatfox:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-threatfox:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/vmray-analyzer
           name: Build Docker image opencti/connector-vmray-analyzer
-          command: docker build -t opencti/connector-vmray-analyzer:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-vmray-analyzer:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/virustotal-livehunt-rules
           name: Build Docker image opencti/connector-virustotal-livehunt-rules
-          command: docker build -t opencti/connector-virustotal-livehunt-rules:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-virustotal-livehunt-rules:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/taxii-post
           name: Build Docker image opencti/connector-taxii-post
-          command: docker build -t opencti/connector-taxii-post:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-taxii-post:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/feedly
           name: Build Docker image opencti/connector-feedly
-          command: docker build -t opencti/connector-feedly:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-feedly:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/logrhythm
           name: Build Docker image opencti/connector-logrhythm
-          command: docker build -t opencti/connector-logrhythm:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-logrhythm:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/orion-malware
           name: Build Docker image opencti/connector-orion-malware
-          command: docker build -t opencti/connector-orion-malware:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-orion-malware:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/comlaude
           name: Build Docker image opencti/connector-comlaude
-          command: docker build -t opencti/connector-comlaude:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-comlaude:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/harfanglab
           name: Build Docker image opencti/connector-harfanglab
-          command: docker build -t opencti/connector-harfanglab:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-harfanglab:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/crtsh
           name: Build Docker image opencti/connector-crtsh
-          command: docker build -t opencti/connector-crtsh:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-crtsh:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/rst-report-hub
           name: Build Docker image opencti/connector-rst-report-hub
-          command: docker build -t opencti/connector-rst-report-hub:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-rst-report-hub:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/rst-threat-feed
           name: Build Docker image opencti/connector-rst-threat-feed
-          command: docker build -t opencti/connector-rst-threat-feed:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-rst-threat-feed:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/hostio
           name: Build Docker image opencti/connector-hostio
-          command: docker build -t opencti/connector-hostio:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-hostio:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/intelfinder
           name: Build Docker image opencti/connector-intelfinder
-          command: docker build -t opencti/connector-intelfinder:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-intelfinder:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-export-file/export-ttps-file-navigator
           name: Build Docker image opencti/connector-export-ttps-file-navigator
-          command: docker build -t opencti/connector-export-ttps-file-navigator:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-export-ttps-file-navigator:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/google-drive
           name: Build Docker image opencti/connector-google-drive
-          command: docker build -t opencti/connector-google-drive:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-google-drive:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/crowdstrike-endpoint-security
           name: Build Docker image opencti/connector-crowdstrike-endpoint-security
-          command: docker build -t opencti/connector-crowdstrike-endpoint-security:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-crowdstrike-endpoint-security:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/dnstwist
           name: Build Docker image opencti/connector-dnstwist
-          command: docker build -t opencti/connector-dnstwist:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-dnstwist:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cpe
           name: Build Docker image opencti/connector-cpe
-          command: docker build -t opencti/connector-cpe:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cpe:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/urlscan-enrichment
           name: Build Docker image opencti/connector-urlscan-enrichment
-          command: docker build -t opencti/connector-urlscan-enrichment:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-urlscan-enrichment:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/mitre-atlas
           name: Build Docker image opencti/connector-mitre-atlas
-          command: docker build -t opencti/connector-mitre-atlas:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-mitre-atlas:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/malcore
           name: Build Docker image opencti/connector-malcore
-          command: docker build -t opencti/connector-malcore:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-malcore:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/infoblox
           name: Build Docker image opencti/connector-infoblox
-          command: docker build -t opencti/connector-infoblox:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-infoblox:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cisco-sma
           name: Build Docker image opencti/connector-cisco-sma
-          command: docker build -t opencti/connector-cisco-sma:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cisco-sma:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/fortinet-ti
           name: Build Docker image opencti/connector-fortinet-ti
-          command: docker build -t opencti/connector-fortinet-ti:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-fortinet-ti:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/safebrowsing
           name: Build Docker image opencti/connector-google-safebrowsing
-          command: docker build -t opencti/connector-google-safebrowsing:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-google-safebrowsing:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cofense
           name: Build Docker image opencti/connector-cofense
-          command: docker build -t opencti/connector-cofense:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cofense:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/group-ib
           name: Build Docker image opencti/connector-group-ib
-          command: docker build -t opencti/connector-group-ib:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-group-ib:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/first-epss
           name: Build Docker image opencti/connector-first-epss
-          command: docker build -t opencti/connector-first-epss:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-first-epss:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/reversinglabs-spectra-analyze
           name: Build Docker image opencti/connector-reversinglabs-spectra-analyze
-          command: docker build -t opencti/connector-reversinglabs-spectra-analyze:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-reversinglabs-spectra-analyze:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/shadowtrackr
           name: Build Docker image opencti/connector-shadowtrackr
-          command: docker build -t opencti/connector-shadowtrackr:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-shadowtrackr:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/greynoise-vuln
           name: Build Docker image opencti/connector-greynoise-vuln
@@ -1318,81 +1318,81 @@ jobs:
           name: Publish Docker Image to Docker Hub
           command: |
             echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
-            docker push opencti/connector-import-file-stix:$CUSTOM_TAG
-            docker push opencti/connector-import-document:$CUSTOM_TAG
-            docker push opencti/connector-export-file-stix:$CUSTOM_TAG
-            docker push opencti/connector-export-file-csv:$CUSTOM_TAG
-            docker push opencti/connector-export-file-txt:$CUSTOM_TAG
-            docker push opencti/connector-hygiene:$CUSTOM_TAG
-            docker push opencti/connector-alienvault:$CUSTOM_TAG
-            docker push opencti/connector-diode-import:$CUSTOM_TAG
-            docker push opencti/connector-crowdstrike:$CUSTOM_TAG
-            docker push opencti/connector-cuckoo:$CUSTOM_TAG
-            docker push opencti/connector-cape:$CUSTOM_TAG
-            docker push opencti/connector-misp:$CUSTOM_TAG
-            docker push opencti/connector-mitre:$CUSTOM_TAG
-            docker push opencti/connector-opencti:$CUSTOM_TAG
-            docker push opencti/connector-cve:$CUSTOM_TAG
-            docker push opencti/connector-ipinfo:$CUSTOM_TAG
-            docker push opencti/connector-virustotal:$CUSTOM_TAG
-            docker push opencti/connector-virustotal-downloader:$CUSTOM_TAG
-            docker push opencti/connector-lastinfosec:$CUSTOM_TAG
-            docker push opencti/connector-malpedia:$CUSTOM_TAG
-            docker push opencti/connector-mwdb:$CUSTOM_TAG
-            docker push opencti/connector-riskiq:$CUSTOM_TAG
-            docker push opencti/connector-valhalla:$CUSTOM_TAG
-            docker push opencti/connector-tanium:$CUSTOM_TAG
-            docker push opencti/connector-mandiant:$CUSTOM_TAG
-            docker push opencti/connector-kaspersky:$CUSTOM_TAG
-            docker push opencti/connector-greynoise:$CUSTOM_TAG
-            docker push opencti/connector-taxii2:$CUSTOM_TAG
-            docker push opencti/connector-thehive:$CUSTOM_TAG
-            docker push opencti/connector-abuseipdb:$CUSTOM_TAG
-            docker push opencti/connector-urlhaus:$CUSTOM_TAG
-            docker push opencti/connector-malbeacon:$CUSTOM_TAG
-            docker push opencti/connector-crowdsec:$CUSTOM_TAG
-            docker push opencti/connector-sophoslabs-intelix:$CUSTOM_TAG
-            docker push opencti/connector-flashpoint:$CUSTOM_TAG
-            docker push opencti/connector-tagger:$CUSTOM_TAG
-            docker push opencti/connector-eset:$CUSTOM_TAG
-            docker push opencti/connector-silobreaker:$CUSTOM_TAG
-            docker push opencti/connector-sentinel:$CUSTOM_TAG
-            docker push opencti/connector-cybersixgill:$CUSTOM_TAG
-            docker push opencti/connector-tweetfeed:$CUSTOM_TAG
-            docker push opencti/connector-threatfox:$CUSTOM_TAG
-            docker push opencti/connector-vmray-analyzer:$CUSTOM_TAG
-            docker push opencti/connector-virustotal-livehunt-rules:$CUSTOM_TAG
-            docker push opencti/connector-taxii-post:$CUSTOM_TAG
-            docker push opencti/connector-feedly:$CUSTOM_TAG
-            docker push opencti/connector-logrhythm:$CUSTOM_TAG
-            docker push opencti/connector-orion-malware:$CUSTOM_TAG
-            docker push opencti/connector-comlaude:$CUSTOM_TAG
-            docker push opencti/connector-harfanglab:$CUSTOM_TAG
-            docker push opencti/connector-crtsh:$CUSTOM_TAG
-            docker push opencti/connector-rst-report-hub:$CUSTOM_TAG
-            docker push opencti/connector-rst-threat-feed:$CUSTOM_TAG
-            docker push opencti/connector-hostio:$CUSTOM_TAG
-            docker push opencti/connector-intelfinder:$CUSTOM_TAG
-            docker push opencti/connector-export-ttps-file-navigator:$CUSTOM_TAG
-            docker push opencti/connector-google-drive:$CUSTOM_TAG
-            docker push opencti/connector-crowdstrike-endpoint-security:$CUSTOM_TAG
-            docker push opencti/connector-dnstwist:$CUSTOM_TAG
-            docker push opencti/connector-cpe:$CUSTOM_TAG
-            docker push opencti/connector-urlscan-enrichment:$CUSTOM_TAG
-            docker push opencti/connector-mitre-atlas:$CUSTOM_TAG
-            docker push opencti/connector-malcore:$CUSTOM_TAG
-            docker push opencti/connector-infoblox:$CUSTOM_TAG
-            docker push opencti/connector-cisco-sma:$CUSTOM_TAG
-            docker push opencti/connector-fortinet-ti:$CUSTOM_TAG
-            docker push opencti/connector-google-safebrowsing:$CUSTOM_TAG
-            docker push opencti/connector-cofense:$CUSTOM_TAG
-            docker push opencti/connector-group-ib:$CUSTOM_TAG
-            docker push opencti/connector-first-epss:$CUSTOM_TAG
-            docker push opencti/connector-reversinglabs-spectra-analyze:$CUSTOM_TAG
-            docker push opencti/connector-shadowtrackr:$CUSTOM_TAG
-            docker push opencti/connector-greynoise-vuln:$CUSTOM_TAG
-            docker push opencti/connector-sentinel-incidents:$CUSTOM_TAG
-            docker push opencti/connector-sentinel-intel:$CUSTOM_TAG
+            docker push opencti/connector-import-file-stix:${CUSTOM_TAG}
+            docker push opencti/connector-import-document:${CUSTOM_TAG}
+            docker push opencti/connector-export-file-stix:${CUSTOM_TAG}
+            docker push opencti/connector-export-file-csv:${CUSTOM_TAG}
+            docker push opencti/connector-export-file-txt:${CUSTOM_TAG}
+            docker push opencti/connector-hygiene:${CUSTOM_TAG}
+            docker push opencti/connector-alienvault:${CUSTOM_TAG}
+            docker push opencti/connector-diode-import:${CUSTOM_TAG}
+            docker push opencti/connector-crowdstrike:${CUSTOM_TAG}
+            docker push opencti/connector-cuckoo:${CUSTOM_TAG}
+            docker push opencti/connector-cape:${CUSTOM_TAG}
+            docker push opencti/connector-misp:${CUSTOM_TAG}
+            docker push opencti/connector-mitre:${CUSTOM_TAG}
+            docker push opencti/connector-opencti:${CUSTOM_TAG}
+            docker push opencti/connector-cve:${CUSTOM_TAG}
+            docker push opencti/connector-ipinfo:${CUSTOM_TAG}
+            docker push opencti/connector-virustotal:${CUSTOM_TAG}
+            docker push opencti/connector-virustotal-downloader:${CUSTOM_TAG}
+            docker push opencti/connector-lastinfosec:${CUSTOM_TAG}
+            docker push opencti/connector-malpedia:${CUSTOM_TAG}
+            docker push opencti/connector-mwdb:${CUSTOM_TAG}
+            docker push opencti/connector-riskiq:${CUSTOM_TAG}
+            docker push opencti/connector-valhalla:${CUSTOM_TAG}
+            docker push opencti/connector-tanium:${CUSTOM_TAG}
+            docker push opencti/connector-mandiant:${CUSTOM_TAG}
+            docker push opencti/connector-kaspersky:${CUSTOM_TAG}
+            docker push opencti/connector-greynoise:${CUSTOM_TAG}
+            docker push opencti/connector-taxii2:${CUSTOM_TAG}
+            docker push opencti/connector-thehive:${CUSTOM_TAG}
+            docker push opencti/connector-abuseipdb:${CUSTOM_TAG}
+            docker push opencti/connector-urlhaus:${CUSTOM_TAG}
+            docker push opencti/connector-malbeacon:${CUSTOM_TAG}
+            docker push opencti/connector-crowdsec:${CUSTOM_TAG}
+            docker push opencti/connector-sophoslabs-intelix:${CUSTOM_TAG}
+            docker push opencti/connector-flashpoint:${CUSTOM_TAG}
+            docker push opencti/connector-tagger:${CUSTOM_TAG}
+            docker push opencti/connector-eset:${CUSTOM_TAG}
+            docker push opencti/connector-silobreaker:${CUSTOM_TAG}
+            docker push opencti/connector-sentinel:${CUSTOM_TAG}
+            docker push opencti/connector-cybersixgill:${CUSTOM_TAG}
+            docker push opencti/connector-tweetfeed:${CUSTOM_TAG}
+            docker push opencti/connector-threatfox:${CUSTOM_TAG}
+            docker push opencti/connector-vmray-analyzer:${CUSTOM_TAG}
+            docker push opencti/connector-virustotal-livehunt-rules:${CUSTOM_TAG}
+            docker push opencti/connector-taxii-post:${CUSTOM_TAG}
+            docker push opencti/connector-feedly:${CUSTOM_TAG}
+            docker push opencti/connector-logrhythm:${CUSTOM_TAG}
+            docker push opencti/connector-orion-malware:${CUSTOM_TAG}
+            docker push opencti/connector-comlaude:${CUSTOM_TAG}
+            docker push opencti/connector-harfanglab:${CUSTOM_TAG}
+            docker push opencti/connector-crtsh:${CUSTOM_TAG}
+            docker push opencti/connector-rst-report-hub:${CUSTOM_TAG}
+            docker push opencti/connector-rst-threat-feed:${CUSTOM_TAG}
+            docker push opencti/connector-hostio:${CUSTOM_TAG}
+            docker push opencti/connector-intelfinder:${CUSTOM_TAG}
+            docker push opencti/connector-export-ttps-file-navigator:${CUSTOM_TAG}
+            docker push opencti/connector-google-drive:${CUSTOM_TAG}
+            docker push opencti/connector-crowdstrike-endpoint-security:${CUSTOM_TAG}
+            docker push opencti/connector-dnstwist:${CUSTOM_TAG}
+            docker push opencti/connector-cpe:${CUSTOM_TAG}
+            docker push opencti/connector-urlscan-enrichment:${CUSTOM_TAG}
+            docker push opencti/connector-mitre-atlas:${CUSTOM_TAG}
+            docker push opencti/connector-malcore:${CUSTOM_TAG}
+            docker push opencti/connector-infoblox:${CUSTOM_TAG}
+            docker push opencti/connector-cisco-sma:${CUSTOM_TAG}
+            docker push opencti/connector-fortinet-ti:${CUSTOM_TAG}
+            docker push opencti/connector-google-safebrowsing:${CUSTOM_TAG}
+            docker push opencti/connector-cofense:${CUSTOM_TAG}
+            docker push opencti/connector-group-ib:${CUSTOM_TAG}
+            docker push opencti/connector-first-epss:${CUSTOM_TAG}
+            docker push opencti/connector-reversinglabs-spectra-analyze:${CUSTOM_TAG}
+            docker push opencti/connector-shadowtrackr:${CUSTOM_TAG}
+            docker push opencti/connector-greynoise-vuln:${CUSTOM_TAG}
+            docker push opencti/connector-sentinel-incidents:${CUSTOM_TAG}
+            docker push opencti/connector-sentinel-intel:${CUSTOM_TAG}
       - slack/notify:
           event: fail
           template: basic_fail_1
@@ -1417,342 +1417,342 @@ jobs:
       - run:
           working_directory: ~/opencti/external-import/sekoia
           name: Build Docker image opencti/connector-sekoia
-          command: docker build -t opencti/connector-sekoia:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-sekoia:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/hybrid-analysis-sandbox
           name: Build Docker image opencti/connector-hybrid-analysis-sandbox
-          command: docker build -t opencti/connector-hybrid-analysis-sandbox:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-hybrid-analysis-sandbox:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/splunk
           name: Build Docker image opencti/connector-splunk
-          command: docker build -t opencti/connector-splunk:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-splunk:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/elastic
           name: Build Docker image opencti/connector-elastic
-          command: docker build -t opencti/connector-elastic:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-elastic:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/vxvault
           name: Build Docker image opencti/connector-vxvault
-          command: docker build -t opencti/connector-vxvault:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-vxvault:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/shodan
           name: Build Docker image opencti/connector-shodan
-          command: docker build -t opencti/connector-shodan:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-shodan:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/shodan-internetdb
           name: Build Docker image opencti/connector-shodan-internetdb
-          command: docker build -t opencti/connector-shodan-internetdb:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-shodan-internetdb:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/import-external-reference
           name: Build Docker image opencti/connector-import-external-reference
-          command: docker build -t opencti/connector-import-external-reference:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-import-external-reference:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/backup-files
           name: Build Docker image opencti/connector-backup-files
-          command: docker build -t opencti/connector-backup-files:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-backup-files:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/threatmatch
           name: Build Docker image opencti/connector-threatmatch
-          command: docker build -t opencti/connector-threatmatch:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-threatmatch:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/restore-files
           name: Build Docker image opencti/connector-restore-files
-          command: docker build -t opencti/connector-restore-files:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-restore-files:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/virustotal-livehunt-notifications
           name: Build Docker image opencti/connector-virustotal-livehunt-notifications
-          command: docker build -t opencti/connector-virustotal-livehunt-notifications:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-virustotal-livehunt-notifications:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/cape-sandbox
           name: Build Docker image opencti/connector-cape-sandbox
-          command: docker build -t opencti/connector-cape-sandbox:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cape-sandbox:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/domaintools
           name: Build Docker image opencti/connector-domaintools
-          command: docker build -t opencti/connector-domaintools:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-domaintools:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/intezer-sandbox
           name: Build Docker image opencti/connector-intezer-sandbox
-          command: docker build -t opencti/connector-intezer-sandbox:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-intezer-sandbox:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/hatching-triage-sandbox
           name: Build Docker image opencti/connector-hatching-triage-sandbox
-          command: docker build -t opencti/connector-hatching-triage-sandbox:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-hatching-triage-sandbox:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/unpac-me
           name: Build Docker image opencti/connector-unpac-me
-          command: docker build -t opencti/connector-unpac-me:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-unpac-me:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/ivre
           name: Build Docker image opencti/connector-ivre
-          command: docker build -t opencti/connector-ivre:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-ivre:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/malwarebazaar-recent-additions
           name: Build Docker image opencti/connector-malwarebazaar-recent-additions
-          command: docker build -t opencti/connector-malwarebazaar-recent-additions:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-malwarebazaar-recent-additions:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/urlhaus-recent-payloads
           name: Build Docker image opencti/connector-urlhaus-recent-payloads
-          command: docker build -t opencti/connector-urlhaus-recent-payloads:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-urlhaus-recent-payloads:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-export-file/export-report-pdf
           name: Build Docker image opencti/connector-export-report-pdf
-          command: docker build -t opencti/connector-export-report-pdf:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-export-report-pdf:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/obstracts
           name: Build Docker image opencti/connector-obstracts
-          command: docker build -t opencti/connector-obstracts:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-obstracts:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/stixify
           name: Build Docker image opencti/connector-stixify
-          command: docker build -t opencti/connector-stixify:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-stixify:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/vulmatch
           name: Build Docker image opencti/connector-vulmatch
-          command: docker build -t opencti/connector-vulmatch:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-vulmatch:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/siemrules
           name: Build Docker image opencti/connector-siemrules
-          command: docker build -t opencti/connector-siemrules:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-siemrules:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cisa-known-exploited-vulnerabilities
           name: Build Docker image opencti/connector-cisa-known-exploited-vulnerabilities
-          command: docker build -t opencti/connector-cisa-known-exploited-vulnerabilities:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cisa-known-exploited-vulnerabilities:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cyber-campaign-collection
           name: Build Docker image opencti/connector-cyber-campaign-collection
-          command: docker build -t opencti/connector-cyber-campaign-collection:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cyber-campaign-collection:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/socprime
           name: Build Docker image opencti/connector-socprime
-          command: docker build -t opencti/connector-socprime:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-socprime:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/urlscan
           name: Build Docker image opencti/connector-urlscan
-          command: docker build -t opencti/connector-urlscan:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-urlscan:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/maltiverse
           name: Build Docker image opencti/connector-maltiverse
-          command: docker build -t opencti/connector-maltiverse:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-maltiverse:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/intel471
           name: Build Docker image opencti/connector-intel471
-          command: docker build -t opencti/connector-intel471:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-intel471:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/orange-cyberdefense
           name: Build Docker image opencti/connector-orange-cyberdefense
-          command: docker build -t opencti/connector-orange-cyberdefense:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-orange-cyberdefense:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/citalid
           name: Build Docker image opencti/connector-citalid
-          command: docker build -t opencti/connector-citalid:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-citalid:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/abuseipdb-ipblacklist
           name: Build Docker image opencti/connector-abuseipdb-ipblacklist
-          command: docker build -t opencti/connector-abuseipdb-ipblacklist:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-abuseipdb-ipblacklist:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/misp-feed
           name: Build Docker image opencti/connector-misp-feed
-          command: docker build -t opencti/connector-misp-feed:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-misp-feed:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/disarm-framework
           name: Build Docker image opencti/connector-disarm-framework
-          command: docker build -t opencti/connector-disarm-framework:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-disarm-framework:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/chapsvision
           name: Build Docker image opencti/connector-chapsvision
-          command: docker build -t opencti/connector-chapsvision:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-chapsvision:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/abuse-ssl
           name: Build Docker image opencti/connector-abuse-ssl
-          command: docker build -t opencti/connector-abuse-ssl:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-abuse-ssl:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/ironnet
           name: Build Docker image opencti/connector-ironnet
-          command: docker build -t opencti/connector-ironnet:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-ironnet:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/recorded-future
           name: Build Docker image opencti/connector-recorded-future
-          command: docker build -t opencti/connector-recorded-future:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-recorded-future:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/opencsam
           name: Build Docker image opencti/connector-opencsam
-          command: docker build -t opencti/connector-opencsam:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-opencsam:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/joe-sandbox
           name: Build Docker image opencti/connector-joe-sandbox
-          command: docker build -t opencti/connector-joe-sandbox:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-joe-sandbox:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/crits
           name: Build Docker image opencti/connector-crits
-          command: docker build -t opencti/connector-crits:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-crits:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/yara
           name: Build Docker image opencti/connector-yara
-          command: docker build -t opencti/connector-yara:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-yara:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/ipqs
           name: Build Docker image opencti/connector-ipqs
-          command: docker build -t opencti/connector-ipqs:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-ipqs:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/google-dns
           name: Build Docker image opencti/connector-google-dns
-          command: docker build -t opencti/connector-google-dns:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-google-dns:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/qradar
           name: Build Docker image opencti/connector-qradar
-          command: docker build -t opencti/connector-qradar:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-qradar:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/chronicle
           name: Build Docker image opencti/connector-chronicle
-          command: docker build -t opencti/connector-chronicle:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-chronicle:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/zerofox
           name: Build Docker image opencti/connector-zerofox
-          command: docker build -t opencti/connector-zerofox:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-zerofox:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/recordedfuture-enrichment
           name: Build Docker image opencti/connector-recordedfuture-enrichment
-          command: docker build -t opencti/connector-recordedfuture-enrichment:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-recordedfuture-enrichment:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/lastinfosec
           name: Build Docker image opencti/connector-lastinfosec-enrichment
-          command: docker build -t opencti/connector-lastinfosec-enrichment:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-lastinfosec-enrichment:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/stopforumspam
           name: Build Docker image opencti/connector-stopforumspam
-          command: docker build -t opencti/connector-stopforumspam:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-stopforumspam:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/phishunt
           name: Build Docker image opencti/connector-phishunt
-          command: docker build -t opencti/connector-phishunt:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-phishunt:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/attribution-tools
           name: Build Docker image opencti/connector-attribution-tools
-          command: docker build -t opencti/connector-attribution-tools:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-attribution-tools:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/cluster25
           name: Build Docker image opencti/connector-cluster25
-          command: docker build -t opencti/connector-cluster25:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-cluster25:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/ransomwarelive
           name: Build Docker image opencti/connector-ransomwarelive
-          command: docker build -t opencti/connector-ransomwarelive:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-ransomwarelive:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/anyrun-feed
           name: Build Docker image opencti/connector-anyrun-feed
-          command: docker build -t opencti/connector-anyrun-feed:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-anyrun-feed:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/anyrun-task
           name: Build Docker image opencti/connector-anyrun-task
-          command: docker build -t opencti/connector-anyrun-task:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-anyrun-task:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/greynoise-feed
           name: Build Docker image opencti/connector-greynoise-feed
-          command: docker build -t opencti/connector-greynoise-feed:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-greynoise-feed:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/rst-noise-control
           name: Build Docker image opencti/connector-rst-noise-control
-          command: docker build -t opencti/connector-rst-noise-control:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-rst-noise-control:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/red-flag-domains
           name: Build Docker image opencti/connector-red-flag-domains
-          command: docker build -t opencti/connector-red-flag-domains:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-red-flag-domains:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/external-import/shadowserver
           name: Build Docker image opencti/connector-shadowserver
-          command: docker build -t opencti/connector-shadowserver:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-shadowserver:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/reversinglabs-malware-presence
           name: Build Docker image opencti/connector-reversinglabs-malware-presence
-          command: docker build -t opencti/connector-reversinglabs-malware-presence:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-reversinglabs-malware-presence:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/jira
           name: Build Docker image opencti/connector-jira
-          command: docker build -t opencti/connector-jira:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-jira:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/stream/webhook
           name: Build Docker image opencti/connector-webhook
-          command: docker build -t opencti/connector-webhook:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-webhook:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-enrichment/reversinglabs-spectra-intel-submission
           name: Build Docker image opencti/connector-reversinglabs-spectra-intel-submission
-          command: docker build -t opencti/connector-reversinglabs-spectra-intel-submission:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-reversinglabs-spectra-intel-submission:${CUSTOM_TAG} .
       - run:
           working_directory: ~/opencti/internal-import-file/import-file-misp
           name: Build Docker image opencti/connector-import-file-misp
-          command: docker build -t opencti/connector-import-file-misp:$CUSTOM_TAG .
+          command: docker build -t opencti/connector-import-file-misp:${CUSTOM_TAG} .
       - run:
           name: Publish Docker Image to Docker Hub
           command: |
             echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
-            docker push opencti/connector-sekoia:$CUSTOM_TAG
-            docker push opencti/connector-hybrid-analysis-sandbox:$CUSTOM_TAG
-            docker push opencti/connector-splunk:$CUSTOM_TAG
-            docker push opencti/connector-elastic:$CUSTOM_TAG
-            docker push opencti/connector-vxvault:$CUSTOM_TAG
-            docker push opencti/connector-shodan:$CUSTOM_TAG
-            docker push opencti/connector-shodan-internetdb:$CUSTOM_TAG
-            docker push opencti/connector-import-external-reference:$CUSTOM_TAG
-            docker push opencti/connector-backup-files:$CUSTOM_TAG
-            docker push opencti/connector-threatmatch:$CUSTOM_TAG
-            docker push opencti/connector-restore-files:$CUSTOM_TAG
-            docker push opencti/connector-virustotal-livehunt-notifications:$CUSTOM_TAG
-            docker push opencti/connector-cape-sandbox:$CUSTOM_TAG
-            docker push opencti/connector-domaintools:$CUSTOM_TAG
-            docker push opencti/connector-intezer-sandbox:$CUSTOM_TAG
-            docker push opencti/connector-hatching-triage-sandbox:$CUSTOM_TAG
-            docker push opencti/connector-unpac-me:$CUSTOM_TAG
-            docker push opencti/connector-ivre:$CUSTOM_TAG
-            docker push opencti/connector-malwarebazaar-recent-additions:$CUSTOM_TAG
-            docker push opencti/connector-urlhaus-recent-payloads:$CUSTOM_TAG
-            docker push opencti/connector-export-report-pdf:$CUSTOM_TAG
-            docker push opencti/connector-obstracts:$CUSTOM_TAG
-            docker push opencti/connector-stixify:$CUSTOM_TAG
-            docker push opencti/connector-vulmatch:$CUSTOM_TAG
-            docker push opencti/connector-siemrules:$CUSTOM_TAG
-            docker push opencti/connector-cisa-known-exploited-vulnerabilities:$CUSTOM_TAG
-            docker push opencti/connector-cyber-campaign-collection:$CUSTOM_TAG
-            docker push opencti/connector-socprime:$CUSTOM_TAG
-            docker push opencti/connector-urlscan:$CUSTOM_TAG
-            docker push opencti/connector-maltiverse:$CUSTOM_TAG
-            docker push opencti/connector-intel471:$CUSTOM_TAG
-            docker push opencti/connector-orange-cyberdefense:$CUSTOM_TAG
-            docker push opencti/connector-citalid:$CUSTOM_TAG
-            docker push opencti/connector-abuseipdb-ipblacklist:$CUSTOM_TAG
-            docker push opencti/connector-misp-feed:$CUSTOM_TAG
-            docker push opencti/connector-disarm-framework:$CUSTOM_TAG
-            docker push opencti/connector-chapsvision:$CUSTOM_TAG
-            docker push opencti/connector-abuse-ssl:$CUSTOM_TAG
-            docker push opencti/connector-ironnet:$CUSTOM_TAG
-            docker push opencti/connector-recorded-future:$CUSTOM_TAG
-            docker push opencti/connector-opencsam:$CUSTOM_TAG
-            docker push opencti/connector-joe-sandbox:$CUSTOM_TAG
-            docker push opencti/connector-crits:$CUSTOM_TAG
-            docker push opencti/connector-yara:$CUSTOM_TAG
-            docker push opencti/connector-ipqs:$CUSTOM_TAG
-            docker push opencti/connector-google-dns:$CUSTOM_TAG
-            docker push opencti/connector-qradar:$CUSTOM_TAG
-            docker push opencti/connector-chronicle:$CUSTOM_TAG
-            docker push opencti/connector-zerofox:$CUSTOM_TAG
-            docker push opencti/connector-recordedfuture-enrichment:$CUSTOM_TAG
-            docker push opencti/connector-lastinfosec-enrichment:$CUSTOM_TAG
-            docker push opencti/connector-stopforumspam:$CUSTOM_TAG
-            docker push opencti/connector-phishunt:$CUSTOM_TAG
-            docker push opencti/connector-attribution-tools:$CUSTOM_TAG
-            docker push opencti/connector-cluster25:$CUSTOM_TAG
-            docker push opencti/connector-ransomwarelive:$CUSTOM_TAG
-            docker push opencti/connector-anyrun-feed:$CUSTOM_TAG
-            docker push opencti/connector-anyrun-task:$CUSTOM_TAG
-            docker push opencti/connector-greynoise-feed:$CUSTOM_TAG
-            docker push opencti/connector-rst-noise-control:$CUSTOM_TAG
-            docker push opencti/connector-red-flag-domains:$CUSTOM_TAG
-            docker push opencti/connector-shadowserver:$CUSTOM_TAG
-            docker push opencti/connector-reversinglabs-malware-presence:$CUSTOM_TAG
-            docker push opencti/connector-jira:$CUSTOM_TAG
-            docker push opencti/connector-webhook:$CUSTOM_TAG
-            docker push opencti/connector-reversinglabs-spectra-intel-submission:$CUSTOM_TAG
-            docker push opencti/connector-import-file-misp:$CUSTOM_TAG
+            docker push opencti/connector-sekoia:${CUSTOM_TAG}
+            docker push opencti/connector-hybrid-analysis-sandbox:${CUSTOM_TAG}
+            docker push opencti/connector-splunk:${CUSTOM_TAG}
+            docker push opencti/connector-elastic:${CUSTOM_TAG}
+            docker push opencti/connector-vxvault:${CUSTOM_TAG}
+            docker push opencti/connector-shodan:${CUSTOM_TAG}
+            docker push opencti/connector-shodan-internetdb:${CUSTOM_TAG}
+            docker push opencti/connector-import-external-reference:${CUSTOM_TAG}
+            docker push opencti/connector-backup-files:${CUSTOM_TAG}
+            docker push opencti/connector-threatmatch:${CUSTOM_TAG}
+            docker push opencti/connector-restore-files:${CUSTOM_TAG}
+            docker push opencti/connector-virustotal-livehunt-notifications:${CUSTOM_TAG}
+            docker push opencti/connector-cape-sandbox:${CUSTOM_TAG}
+            docker push opencti/connector-domaintools:${CUSTOM_TAG}
+            docker push opencti/connector-intezer-sandbox:${CUSTOM_TAG}
+            docker push opencti/connector-hatching-triage-sandbox:${CUSTOM_TAG}
+            docker push opencti/connector-unpac-me:${CUSTOM_TAG}
+            docker push opencti/connector-ivre:${CUSTOM_TAG}
+            docker push opencti/connector-malwarebazaar-recent-additions:${CUSTOM_TAG}
+            docker push opencti/connector-urlhaus-recent-payloads:${CUSTOM_TAG}
+            docker push opencti/connector-export-report-pdf:${CUSTOM_TAG}
+            docker push opencti/connector-obstracts:${CUSTOM_TAG}
+            docker push opencti/connector-stixify:${CUSTOM_TAG}
+            docker push opencti/connector-vulmatch:${CUSTOM_TAG}
+            docker push opencti/connector-siemrules:${CUSTOM_TAG}
+            docker push opencti/connector-cisa-known-exploited-vulnerabilities:${CUSTOM_TAG}
+            docker push opencti/connector-cyber-campaign-collection:${CUSTOM_TAG}
+            docker push opencti/connector-socprime:${CUSTOM_TAG}
+            docker push opencti/connector-urlscan:${CUSTOM_TAG}
+            docker push opencti/connector-maltiverse:${CUSTOM_TAG}
+            docker push opencti/connector-intel471:${CUSTOM_TAG}
+            docker push opencti/connector-orange-cyberdefense:${CUSTOM_TAG}
+            docker push opencti/connector-citalid:${CUSTOM_TAG}
+            docker push opencti/connector-abuseipdb-ipblacklist:${CUSTOM_TAG}
+            docker push opencti/connector-misp-feed:${CUSTOM_TAG}
+            docker push opencti/connector-disarm-framework:${CUSTOM_TAG}
+            docker push opencti/connector-chapsvision:${CUSTOM_TAG}
+            docker push opencti/connector-abuse-ssl:${CUSTOM_TAG}
+            docker push opencti/connector-ironnet:${CUSTOM_TAG}
+            docker push opencti/connector-recorded-future:${CUSTOM_TAG}
+            docker push opencti/connector-opencsam:${CUSTOM_TAG}
+            docker push opencti/connector-joe-sandbox:${CUSTOM_TAG}
+            docker push opencti/connector-crits:${CUSTOM_TAG}
+            docker push opencti/connector-yara:${CUSTOM_TAG}
+            docker push opencti/connector-ipqs:${CUSTOM_TAG}
+            docker push opencti/connector-google-dns:${CUSTOM_TAG}
+            docker push opencti/connector-qradar:${CUSTOM_TAG}
+            docker push opencti/connector-chronicle:${CUSTOM_TAG}
+            docker push opencti/connector-zerofox:${CUSTOM_TAG}
+            docker push opencti/connector-recordedfuture-enrichment:${CUSTOM_TAG}
+            docker push opencti/connector-lastinfosec-enrichment:${CUSTOM_TAG}
+            docker push opencti/connector-stopforumspam:${CUSTOM_TAG}
+            docker push opencti/connector-phishunt:${CUSTOM_TAG}
+            docker push opencti/connector-attribution-tools:${CUSTOM_TAG}
+            docker push opencti/connector-cluster25:${CUSTOM_TAG}
+            docker push opencti/connector-ransomwarelive:${CUSTOM_TAG}
+            docker push opencti/connector-anyrun-feed:${CUSTOM_TAG}
+            docker push opencti/connector-anyrun-task:${CUSTOM_TAG}
+            docker push opencti/connector-greynoise-feed:${CUSTOM_TAG}
+            docker push opencti/connector-rst-noise-control:${CUSTOM_TAG}
+            docker push opencti/connector-red-flag-domains:${CUSTOM_TAG}
+            docker push opencti/connector-shadowserver:${CUSTOM_TAG}
+            docker push opencti/connector-reversinglabs-malware-presence:${CUSTOM_TAG}
+            docker push opencti/connector-jira:${CUSTOM_TAG}
+            docker push opencti/connector-webhook:${CUSTOM_TAG}
+            docker push opencti/connector-reversinglabs-spectra-intel-submission:${CUSTOM_TAG}
+            docker push opencti/connector-import-file-misp:${CUSTOM_TAG}
       - slack/notify:
           event: fail
           template: basic_fail_1
