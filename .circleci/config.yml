@@ -1009,7 +1009,10 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt install curl gettext-base
       - run:
           name: Setup env variable for docker tag naming (rolling or prerelease)
-          command: '[[ $CIRCLE_BRANCH == *"release/"* ]] && export CUSTOM_TAG="prerelease" || export CUSTOM_TAG="rolling"; echo $CUSTOM_TAG >> "$BASH_ENV'
+          command: '[[ $CIRCLE_BRANCH == *"release/"* ]] && export CUSTOM_TAG="prerelease" || export CUSTOM_TAG="rolling"; echo "export CUSTOM_TAG=$CUSTOM_TAG" >> "$BASH_ENV"'
+      - run:
+          name: Display env variable for docker tag naming (rolling or prerelease)
+          command: 'echo $CUSTOM_TAG'
       - run:
           working_directory: ~/opencti
           name: Replace pycti requirement of stable version with latest master branch code
@@ -1409,7 +1412,10 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt install curl gettext-base
       - run:
           name: Setup env variable for docker tag naming (rolling or prerelease)
-          command: '[[ $CIRCLE_BRANCH == *"release/"* ]] && export CUSTOM_TAG="prerelease" || export CUSTOM_TAG="rolling"; echo $CUSTOM_TAG >> "$BASH_ENV'
+          command: '[[ $CIRCLE_BRANCH == *"release/"* ]] && export CUSTOM_TAG="prerelease" || export CUSTOM_TAG="rolling"; echo "export CUSTOM_TAG=$CUSTOM_TAG" >> "$BASH_ENV"'
+      - run:
+          name: Display env variable for docker tag naming (rolling or prerelease)
+          command: 'echo $CUSTOM_TAG'
       - run:
           working_directory: ~/opencti
           name: Replace pycti requirement of stable version with latest master branch code
