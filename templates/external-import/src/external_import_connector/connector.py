@@ -1,5 +1,5 @@
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 
 from pycti import OpenCTIConnectorHelper
 
@@ -148,7 +148,7 @@ class ConnectorTemplate:
             )
             current_state = self.helper.get_state()
             current_state_datetime = now.strftime("%Y-%m-%d %H:%M:%S")
-            last_run_datetime = datetime.utcfromtimestamp(current_timestamp).strftime(
+            last_run_datetime = datetime.fromtimestamp(current_timestamp, tz=timezone.utc).strftime(
                 "%Y-%m-%d %H:%M:%S"
             )
             if current_state:
