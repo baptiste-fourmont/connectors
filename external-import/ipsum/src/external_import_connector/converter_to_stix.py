@@ -33,7 +33,7 @@ class ConverterToStix:
         return [external_reference]
 
     @staticmethod
-    def create_author() -> dict:
+    def create_author() -> stix2.Identity:
         """
         Create Author
         :return: Author in Stix2 object
@@ -45,7 +45,7 @@ class ConverterToStix:
             description="IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses",
         )
         return author
-
+        
     def create_relationship(
         self, source_id: str, relationship_type: str, target_id: str
     ) -> dict:
